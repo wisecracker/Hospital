@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  procdure: MyString
+  provider_name: MyString
+  provider_adress: MyString
+  provider_city: MyString
+  provider_state: MyString
+  provider_zipcode: MyString
+  total_discharge: MyString
+  average_covered: MyString
+  total_payment: MyString
+
+two:
+  procdure: MyString
+  provider_name: MyString
+  provider_adress: MyString
+  provider_city: MyString
+  provider_state: MyString
+  provider_zipcode: MyString
+  total_discharge: MyString
+  average_covered: MyString
+  total_payment: MyString
