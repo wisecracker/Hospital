@@ -25,11 +25,14 @@ end
 gem 'jquery-rails'
 
 group :test do
-  gem 'machinist', '>= 2.0.0.beta2'
   gem 'faker'
   gem 'cucumber-rails', :require => false
-  gem 'database_cleaner'
   gem 'launchy'
+  gem 'rspec-rails', '~> 2.0'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
+  gem 'machinist', '>= 2.0.0.beta2'
+
 end
 
 # To use ActiveModel has_secure_password
