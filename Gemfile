@@ -10,6 +10,7 @@ gem 'httparty'
 gem 'pry'
 gem 'mysql2',          '0.3.12b5'
 gem 'thinking-sphinx', '~> 3.0.2'
+gem 'will_paginate', '~> 3.0.0'
 
 
 # Gems used only for assets and not required

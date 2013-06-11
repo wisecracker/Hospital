@@ -3,7 +3,9 @@
 <h1> Website is delicous </h1>
 
 <%= form_tag  do %>
-
-  <%= select_tag(:procedure, options_for_select(@hospital.map { |e| e.procedure  })) %>
+ <%will_paginate @hospital %>
+  <%= select_tag(:procedure, options_for_select(@hospital.map{ |e| e.procedure  })) %>
   <%= submit_tag "Search" %>
+  <% @hospital.each do |hospital_pricing| %>
+<%end%>
 <%end%>

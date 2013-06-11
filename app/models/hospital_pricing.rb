@@ -4,12 +4,7 @@ class HospitalPricing < ActiveRecord::Base
 
 
   def self.get_hospital_info
-    # @@db = SQLite3::Database.new("test/test.db")
-
-    #Accepts Any URL now
-    #split_name = name.split
-    #join_name = split_name.join("%20")
-    # soda_data = HTTParty.get("https://data.cms.gov/api/views/97k6-zzx3/rows.json?accessType=DOWNLOAD")
+  
     soda_data = File.open("test/fixtures/hospital.json","r").read
     hospital_info = JSON(soda_data)
     i = 0

@@ -13,3 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= 'foundation/js/vendor/custom.modernizr.js'
+//=require 'foundation/js/foundation.min.js'

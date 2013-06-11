@@ -2,6 +2,15 @@
 
 <% @results.each do |hospital_pricing| %>
   <div class="hospital_pricing">
-      <h3><%= hospital_pricing.procedure %></h3>  
+      <h5><%= hospital_pricing.provider_name %></h5>  
+      <h5><%= hospital_pricing.procedure %></h5>  
+      <h5><%= number_to_currency(hospital_pricing.total_payment) %></h5>
+      <h5><%= hospital_pricing.provider_zipcode %></h5> 
+      <h5><%= hospital_pricing.provider_city %></h5>
+      <h5><%= hospital_pricing.provider_state %></h5>
   </div>
+
 <% end %>
+<%= link_to 'home', '/' %>
+
+ <%= will_paginate @results %>
