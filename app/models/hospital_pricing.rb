@@ -30,4 +30,3 @@ class HospitalPricing < ActiveRecord::Base
     end
   end
 end
-# create table test (title varchar, year varchar, rated varchar, released varchar, runtime varchar, genre varchar, director varchar, writer varchar, actors varchar, plot varchar, poster varchar, rating float, votes varchar, id varchar)

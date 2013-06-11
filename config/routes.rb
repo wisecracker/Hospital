@@ -1,6 +1,15 @@
 Hospital::Application.routes.draw do
 
   root :to => 'home#index'
+  resources :hospital_pricings do 
+    collection do 
+      post :search 
+      get :search 
+    end
+  end
+  # match 'hospital_pricings' =>
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -17,11 +26,13 @@ Hospital::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
+     
+     #   member do
+     #     get '/search'
+     #   end
+     # end
+
+     
   #
   #     collection do
   #       get 'sold'

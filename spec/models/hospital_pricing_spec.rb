@@ -45,6 +45,20 @@ describe HospitalPricing do
     hospital_pricing = HospitalPricing.new(:total_payment => "cream")
     hospital_pricing.total_payment == "cream"
   end
+it "should let me search for procedures"
+end
 
+it "should let me search by Zipcode"
+end
+
+it "should let me search by "
+end
+
+it "should let visitor sort results by price"
+end
+
+it "should let the visitor sort results by distance"
+
+it "should let tell the"
 
 end

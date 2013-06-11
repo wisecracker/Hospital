@@ -7,7 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <div class="search-box">
+    <%= form_tag search_hospital_pricings_path do %>
+      <%= text_field_tag :procedures, nil, :id => "search_box" %>
+      <%= submit_tag "Search" %>  
+    <% end %>
+</div>
 <%= yield %>
 
 </body>
