@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  total_payment: MyString
+  average_covered: MyString
+  procedure: MyString
+
+two:
+  total_payment: MyString
+  average_covered: MyString
+  procedure: MyString

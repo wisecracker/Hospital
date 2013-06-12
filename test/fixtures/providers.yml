@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  provider_adress: 
+  provider_city: 
+  provider_state: 
+  provider_zipcode: 
+  provider_name: MyString
+
+two:
+  provider_adress: 
+  provider_city: 
+  provider_state: 
+  provider_zipcode: 
+  provider_name: MyString

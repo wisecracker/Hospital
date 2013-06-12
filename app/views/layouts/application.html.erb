@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +8,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="search-box">
+ <div class="search-box">
     <%= form_tag search_hospital_pricings_path do %>
-      <%= text_field_tag :procedures, nil, :id => "search_box" %>
+      <%= text_field_tag :hospital_info, nil, :placeholder=>"General Search", :id => "search_box" %><br>
+      <%= text_field_tag :procedure, nil, :placeholder=>"Procedure Search", :id => "search_box" %><br>
+      <%= text_field_tag :zip, nil, :placeholder=>"Zipcode Search", :id => "search_box" %><br>
       <%= submit_tag "Search" %>  
     <% end %>
-</div>
+</div> 
 <%= yield %>
 
 </body>
