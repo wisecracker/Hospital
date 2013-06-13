@@ -7,6 +7,18 @@ Hospital::Application.routes.draw do
       get :search 
     end
   end
+    resources :procedures do
+      collection do
+        post :search
+        get :search
+    end
+  end
+    resources :providers do
+      collection do
+        post :search
+        get :search
+    end
+  end
   # match 'hospital_pricings' =>
 
   

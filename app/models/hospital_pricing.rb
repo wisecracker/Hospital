@@ -2,7 +2,6 @@ class HospitalPricing < ActiveRecord::Base
 
   attr_accessible :average_covered, :procedure, :provider_adress, :provider_city, :provider_name, :provider_state, :provider_zipcode, :total_discharge, :total_payment
 
-
   def self.get_hospital_info
   
     soda_data = File.open("test/fixtures/hospital.json","r").read
